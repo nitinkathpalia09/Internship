@@ -1,0 +1,8 @@
+﻿  ExplicitDLLLink.cpp
+c:\users\wysepc\source\repos\explicitdlllink\explicitdlllink\exlplicitdll.h(9): warning C4190: 'Hello' has C-linkage specified, but returns UDT 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' which is incompatible with C
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+c:\users\wysepc\source\repos\explicitdlllink\explicitdlllink\explicitdlllink.cpp(36): warning C4190: 'GetEvenOdd' has C-linkage specified, but returns UDT 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' which is incompatible with C
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+ExplicitDLLLink.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+     Creating library C:\Users\WysePC\source\repos\ExplicitDLLLink\x64\Debug\ExplicitDLLLink.lib and object C:\Users\WysePC\source\repos\ExplicitDLLLink\x64\Debug\ExplicitDLLLink.exp
+  ExplicitDLLLink.vcxproj -> C:\Users\WysePC\source\repos\ExplicitDLLLink\x64\Debug\ExplicitDLLLink.exe

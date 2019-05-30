@@ -1,0 +1,8 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  dllmain.cpp
+c:\users\wysepc\source\repos\iathookdll\iathookdll\dllmain.cpp(71): error C2561: 'FoundIAT': function must return a value
+  c:\users\wysepc\source\repos\iathookdll\iathookdll\dllmain.cpp(65): note: see declaration of 'FoundIAT'
+c:\users\wysepc\source\repos\iathookdll\iathookdll\dllmain.cpp(78): error C2561: 'FoundIAT': function must return a value
+  c:\users\wysepc\source\repos\iathookdll\iathookdll\dllmain.cpp(65): note: see declaration of 'FoundIAT'
+c:\users\wysepc\source\repos\iathookdll\iathookdll\dllmain.cpp(82): error C2561: 'FoundIAT': function must return a value
+  c:\users\wysepc\source\repos\iathookdll\iathookdll\dllmain.cpp(65): note: see declaration of 'FoundIAT'

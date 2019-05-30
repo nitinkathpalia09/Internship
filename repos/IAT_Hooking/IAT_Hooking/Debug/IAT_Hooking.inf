@@ -1,0 +1,89 @@
+;
+; IAT_Hooking.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample ; TODO: edit Class
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=IAT_Hooking.cat
+DriverVer = 04/10/2019,10.37.28.93
+
+[DestinationDirs]
+DefaultDestDir = 12
+IAT_Hooking_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+IAT_Hooking.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTx86
+
+[Standard.NTx86]
+%IAT_Hooking.DeviceDesc%=IAT_Hooking_Device, Root\IAT_Hooking ; TODO: edit hw-id
+
+[IAT_Hooking_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+IAT_Hooking.sys
+
+;-------------- Service installation
+[IAT_Hooking_Device.NT.Services]
+AddService = IAT_Hooking,%SPSVCINST_ASSOCSERVICE%, IAT_Hooking_Service_Inst
+
+; -------------- IAT_Hooking driver install sections
+[IAT_Hooking_Service_Inst]
+DisplayName    = %IAT_Hooking.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\IAT_Hooking.sys
+
+;
+;--- IAT_Hooking_Device Coinstaller installation ------
+;
+
+[IAT_Hooking_Device.NT.CoInstallers]
+AddReg=IAT_Hooking_Device_CoInstaller_AddReg
+CopyFiles=IAT_Hooking_Device_CoInstaller_CopyFiles
+
+[IAT_Hooking_Device_CoInstaller_AddReg]
+;
+
+
+[IAT_Hooking_Device_CoInstaller_CopyFiles]
+;
+
+
+[IAT_Hooking_Device.NT.Wdf]
+KmdfService =  IAT_Hooking, IAT_Hooking_wdfsect
+[IAT_Hooking_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "IAT_Hooking Installation Disk"
+IAT_Hooking.DeviceDesc = "IAT_Hooking Device"
+IAT_Hooking.SVCDESC = "IAT_Hooking Service"

@@ -1,0 +1,30 @@
+﻿C:\Users\WysePC\source\repos\CPDriverKernel\CPDriverKernel\CPDriverKernel.vcxproj(113,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Shared.props (361,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\WysePC\source\repos\CPDriverKernel\CPDriverKernel\CPDriverKernel.vcxproj(158,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets (1852,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Building 'CPDriverKernel' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  Stamping Debug\CPDriverKernel.inf
+  Stamping [Version] section with DriverVer=04/11/2019,15.57.34.702
+  spydriver.c
+  CPDriverKernel.vcxproj -> C:\Users\WysePC\source\repos\CPDriverKernel\Debug\CPDriverKernel.sys
+C:\Users\WysePC\source\repos\CPDriverKernel\CPDriverKernel\CPDriverKernel.vcxproj(113,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Shared.props (361,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\WysePC\source\repos\CPDriverKernel\CPDriverKernel\CPDriverKernel.vcxproj(158,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets (1852,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\CPDriverKernel\Debug\CPDriverKernel.sys
+  
+  Driver is a Universal Driver.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\WysePC\source\repos\CPDriverKernel\Debug\CPDriverKernel\cpdriverkernel.cat
+C:\Users\WysePC\source\repos\CPDriverKernel\CPDriverKernel\CPDriverKernel.vcxproj(113,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Shared.props (361,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\WysePC\source\repos\CPDriverKernel\CPDriverKernel\CPDriverKernel.vcxproj(158,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets (1852,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\CPDriverKernel\Debug\CPDriverKernel\cpdriverkernel.cat
+  

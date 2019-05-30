@@ -1,0 +1,89 @@
+;
+; Finaldriver.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample ; TODO: edit Class
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=Finaldriver.cat
+DriverVer = 03/21/2019,20.52.19.644
+
+[DestinationDirs]
+DefaultDestDir = 12
+Finaldriver_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+Finaldriver.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTx86
+
+[Standard.NTx86]
+%Finaldriver.DeviceDesc%=Finaldriver_Device, Root\Finaldriver ; TODO: edit hw-id
+
+[Finaldriver_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+Finaldriver.sys
+
+;-------------- Service installation
+[Finaldriver_Device.NT.Services]
+AddService = Finaldriver,%SPSVCINST_ASSOCSERVICE%, Finaldriver_Service_Inst
+
+; -------------- Finaldriver driver install sections
+[Finaldriver_Service_Inst]
+DisplayName    = %Finaldriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\Finaldriver.sys
+
+;
+;--- Finaldriver_Device Coinstaller installation ------
+;
+
+[Finaldriver_Device.NT.CoInstallers]
+AddReg=Finaldriver_Device_CoInstaller_AddReg
+CopyFiles=Finaldriver_Device_CoInstaller_CopyFiles
+
+[Finaldriver_Device_CoInstaller_AddReg]
+;
+
+
+[Finaldriver_Device_CoInstaller_CopyFiles]
+;
+
+
+[Finaldriver_Device.NT.Wdf]
+KmdfService =  Finaldriver, Finaldriver_wdfsect
+[Finaldriver_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "Finaldriver Installation Disk"
+Finaldriver.DeviceDesc = "Finaldriver Device"
+Finaldriver.SVCDESC = "Finaldriver Service"

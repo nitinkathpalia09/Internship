@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  dllmain.cpp
+  MathLibrary.cpp
+  Generating Code...
+     Creating library C:\Users\WysePC\source\repos\MathLibrary\x64\Debug\MathLibrary.lib and object C:\Users\WysePC\source\repos\MathLibrary\x64\Debug\MathLibrary.exp
+  MathLibrary.vcxproj -> C:\Users\WysePC\source\repos\MathLibrary\x64\Debug\MathLibrary.dll

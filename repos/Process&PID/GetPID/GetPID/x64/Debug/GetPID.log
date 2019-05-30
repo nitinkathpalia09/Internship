@@ -1,0 +1,13 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  pch.cpp
+  GetPID.cpp
+GetPID.obj : error LNK2019: unresolved external symbol _RTC_CheckStackVars referenced in function "unsigned long __cdecl GetParentProcessID(unsigned long)" (?GetParentProcessID@@YAKK@Z)
+GetPID.obj : error LNK2001: unresolved external symbol _RTC_InitBase
+GetPID.obj : error LNK2001: unresolved external symbol _RTC_Shutdown
+GetPID.obj : error LNK2001: unresolved external symbol __GSHandlerCheck
+GetPID.obj : error LNK2019: unresolved external symbol __security_check_cookie referenced in function "unsigned long __cdecl GetParentProcessID(unsigned long)" (?GetParentProcessID@@YAKK@Z)
+GetPID.obj : error LNK2019: unresolved external symbol __security_cookie referenced in function "unsigned long __cdecl GetParentProcessID(unsigned long)" (?GetParentProcessID@@YAKK@Z)
+LINK : error LNK2001: unresolved external symbol mainCRTStartup
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\msvcprtd.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\MSVCRTD.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\WysePC\source\repos\Process&PID\GetPID\x64\Debug\GetPID.exe : fatal error LNK1120: 7 unresolved externals

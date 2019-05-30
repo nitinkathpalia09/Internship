@@ -1,0 +1,19 @@
+﻿  Building 'Injector' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  Stamping x64\Debug\Injector.inf
+  Stamping [Version] section with DriverVer=04/16/2019,11.0.45.4
+  Source.c
+c:\users\wysepc\source\repos\injector\injector\source.c(179): error C2371: 'PIMAGE_NT_HEADERS': redefinition; different basic types
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\km\ntddk.h(90): note: see declaration of 'PIMAGE_NT_HEADERS'
+c:\users\wysepc\source\repos\injector\injector\source.c(373): warning C4133: 'function': incompatible types - from 'ULONG *' to 'PSIZE_T'
+c:\users\wysepc\source\repos\injector\injector\source.c(394): warning C4311: 'type cast': pointer truncation from 'void (__cdecl *)(PKAPC,PKNORMAL_ROUTINE *,PVOID *,PVOID *,PVOID *)' to 'ULONG'
+c:\users\wysepc\source\repos\injector\injector\source.c(394): warning C4311: 'type cast': pointer truncation from 'void (__cdecl *)(PVOID,PVOID,PVOID)' to 'ULONG'
+c:\users\wysepc\source\repos\injector\injector\source.c(404): warning C4133: 'function': incompatible types - from 'ULONG *' to 'PSIZE_T'
+c:\users\wysepc\source\repos\injector\injector\source.c(423): warning C4133: 'function': incompatible types - from 'ULONG *' to 'PSIZE_T'
+c:\users\wysepc\source\repos\injector\injector\source.c(445): warning C4133: 'function': incompatible types - from 'ULONG *' to 'PSIZE_T'
+c:\users\wysepc\source\repos\injector\injector\source.c(457): warning C4133: 'function': incompatible types - from 'ULONG *' to 'PSIZE_T'
+c:\users\wysepc\source\repos\injector\injector\source.c(539): error C4013: '__readfsdword' undefined; assuming extern returning int
+c:\users\wysepc\source\repos\injector\injector\source.c(552): error C2037: left of 'OptionalHeader' specifies undefined struct/union '_IMAGE_NT_HEADERS64'
+c:\users\wysepc\source\repos\injector\injector\source.c(581): warning C4311: 'type cast': pointer truncation from 'PEPROCESS' to 'ULONG'
+c:\users\wysepc\source\repos\injector\injector\source.c(584): warning C4311: 'type cast': pointer truncation from 'PKAPC_STATE' to 'ULONG'
+c:\users\wysepc\source\repos\injector\injector\source.c(584): warning C4311: 'type cast': pointer truncation from 'PETHREAD' to 'ULONG'

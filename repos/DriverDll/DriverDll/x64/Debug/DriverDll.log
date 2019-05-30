@@ -1,0 +1,4 @@
+﻿  Building 'DriverDll' with toolset 'WindowsApplicationForDrivers10.0' and the 'Universal' target platform.
+  Source.c
+Source.obj : error LNK2019: unresolved external symbol __imp_MessageBoxW referenced in function CustomFunction
+C:\Users\WysePC\source\repos\DriverDll\x64\Debug\DriverDll.dll : fatal error LNK1120: 1 unresolved externals

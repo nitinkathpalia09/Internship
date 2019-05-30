@@ -1,0 +1,24 @@
+﻿  Building 'HelloWorld' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  Stamping x64\Debug\HelloWorld.inf
+  Stamping [Version] section with DriverVer=03/18/2019,23.40.15.739
+  Source.c
+  HelloWorld.vcxproj -> C:\Users\WysePC\source\repos\HelloWorld\x64\Debug\HelloWorld.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\HelloWorld\x64\Debug\HelloWorld.sys
+  
+  Driver is a Universal Driver.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\WysePC\source\repos\HelloWorld\x64\Debug\HelloWorld\helloworld.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\HelloWorld\x64\Debug\HelloWorld\helloworld.cat
+  

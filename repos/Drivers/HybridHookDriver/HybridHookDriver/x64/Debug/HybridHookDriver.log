@@ -1,0 +1,23 @@
+﻿  Building 'HybridHookDriver' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\HybridHookDriver.inf
+  Stamping [Version] section with DriverVer=04/19/2019,9.31.33.579
+  Source.c
+  HybridHookDriver.vcxproj -> C:\Users\WysePC\source\repos\Drivers\HybridHookDriver\x64\Debug\HybridHookDriver.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\Drivers\HybridHookDriver\x64\Debug\HybridHookDriver.sys
+  
+  Driver is a Universal Driver.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\WysePC\source\repos\Drivers\HybridHookDriver\x64\Debug\HybridHookDriver\hybridhookdriver.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\Drivers\HybridHookDriver\x64\Debug\HybridHookDriver\hybridhookdriver.cat
+  

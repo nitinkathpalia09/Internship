@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  CreateProcess.cpp
+c:\users\wysepc\source\repos\process&pid\createprocess\createprocess\createprocess.cpp(65): error C2065: 'argv': undeclared identifier
+c:\users\wysepc\source\repos\process&pid\createprocess\createprocess\createprocess.cpp(64): error C2660: 'CreateProcessW': function does not take 9 arguments
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\processthreadsapi.h(377): note: see declaration of 'CreateProcessW'

@@ -1,0 +1,50 @@
+NTSTATUS NTAPI HfnNtCreateProcessEx(
+        PHANDLE ProcessHandle,
+        ACCESS_MASK DesiredAccess,
+        POBJECT_ATTRIBUTES ObjectAttributes OPTIONAL,
+        HANDLE ParentProcess,
+        ULONG Flags,
+        HANDLE SectionHandle OPTIONAL,
+        HANDLE DebugPort OPTIONAL,
+        HANDLE ExceptionPort OPTIONAL,
+        BOOLEAN InJob
+)
+{
+        catMsgW(L"NtCreateProcessEx: Would you like create process? '%s'", getOaObjectName(ObjectAttributes));
+        return pfnNtCreateProcessEx(
+                ProcessHandle,
+                DesiredAccess,
+                ObjectAttributes,
+                ParentProcess,
+                Flags,
+                SectionHandle,
+                DebugPort,
+                ExceptionPort,
+                InJob
+        );
+}
+ 
+NTSTATUS NTAPI HfnNtCreateProcess(
+        PHANDLE ProcessHandle,
+        ACCESS_MASK DesiredAccess,
+        POBJECT_ATTRIBUTES ObjectAttributes OPTIONAL,
+        HANDLE ParentProcess,
+        BOOLEAN InheritObjectTable,
+        HANDLE SectionHandle OPTIONAL,
+        HANDLE DebugPort OPTIONAL,
+        HANDLE ExceptionPort OPTIONAL
+)
+{
+        catMsgW(L"NtCreateProcess: Would you like create process? '%s'", getOaObjectName(ObjectAttributes));
+        return pfnNtCreateProcess(
+                ProcessHandle,
+                DesiredAccess,
+                ObjectAttributes,
+                ParentProcess,
+                InheritObjectTable,
+                SectionHandle,
+                DebugPort,
+                ExceptionPort
+        );
+}
+ 

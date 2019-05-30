@@ -1,0 +1,23 @@
+﻿  Building 'DriverInteract' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\DriverInteract.inf
+  Stamping [Version] section with DriverVer=04/12/2019,16.12.9.445
+  Source.cpp
+  DriverInteract.vcxproj -> C:\Users\WysePC\source\repos\Drivers\DriverInteract\x64\Debug\DriverInteract.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\Drivers\DriverInteract\x64\Debug\DriverInteract.sys
+  
+  Driver is a Universal Driver.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\WysePC\source\repos\Drivers\DriverInteract\x64\Debug\DriverInteract\driverinteract.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\Drivers\DriverInteract\x64\Debug\DriverInteract\driverinteract.cat
+  

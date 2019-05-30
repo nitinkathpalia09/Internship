@@ -1,0 +1,23 @@
+﻿  Building 'ProcessName' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\ProcessName.inf
+  Stamping [Version] section with DriverVer=03/19/2019,23.0.53.249
+  Source.c
+  ProcessName.vcxproj -> C:\Users\WysePC\source\repos\ProcessName\x64\Debug\ProcessName.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\ProcessName\x64\Debug\ProcessName.sys
+  
+  Driver is a Universal Driver.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\WysePC\source\repos\ProcessName\x64\Debug\ProcessName\processname.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\ProcessName\x64\Debug\ProcessName\processname.cat
+  

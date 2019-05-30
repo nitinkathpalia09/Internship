@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  CreateProcess.cpp
+c:\users\wysepc\source\repos\process&pid\createprocess\createprocess\createprocess.cpp(12): warning C4326: return type of 'wmain' should be 'int' instead of 'void'
+c:\users\wysepc\source\repos\process&pid\createprocess\createprocess\createprocess.cpp(22): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'TCHAR *'
+  c:\users\wysepc\source\repos\process&pid\createprocess\createprocess\createprocess.cpp(22): note: consider using '%ls' in the format string
+  c:\users\wysepc\source\repos\process&pid\createprocess\createprocess\createprocess.cpp(22): note: consider using '%lls' in the format string
+  c:\users\wysepc\source\repos\process&pid\createprocess\createprocess\createprocess.cpp(22): note: consider using '%Ls' in the format string
+  c:\users\wysepc\source\repos\process&pid\createprocess\createprocess\createprocess.cpp(22): note: consider using '%ws' in the format string
+  CreateProcess.vcxproj -> C:\Users\WysePC\source\repos\Process&PID\CreateProcess\Debug\CreateProcess.exe

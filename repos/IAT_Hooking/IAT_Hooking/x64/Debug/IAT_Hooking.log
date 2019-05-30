@@ -1,0 +1,31 @@
+﻿C:\Users\WysePC\source\repos\IAT_Hooking\IAT_Hooking\IAT_Hooking.vcxproj(114,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Shared.props (361,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\WysePC\source\repos\IAT_Hooking\IAT_Hooking\IAT_Hooking.vcxproj(161,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets (1852,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Building 'IAT_Hooking' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\IAT_Hooking.inf
+  Stamping [Version] section with DriverVer=04/11/2019,10.9.13.358
+  Assembling hook_asm.asm...
+  Assembling unhook_asm.asm...
+  Source.c
+  IAT_Hooking.vcxproj -> C:\Users\WysePC\source\repos\IAT_Hooking\x64\Debug\IAT_Hooking.sys
+C:\Users\WysePC\source\repos\IAT_Hooking\IAT_Hooking\IAT_Hooking.vcxproj(114,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Shared.props (361,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\WysePC\source\repos\IAT_Hooking\IAT_Hooking\IAT_Hooking.vcxproj(161,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets (1852,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\IAT_Hooking\x64\Debug\IAT_Hooking.sys
+  
+  Driver is a Universal Driver.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\WysePC\source\repos\IAT_Hooking\x64\Debug\IAT_Hooking\iat_hooking.cat
+C:\Users\WysePC\source\repos\IAT_Hooking\IAT_Hooking\IAT_Hooking.vcxproj(114,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Shared.props (361,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\WysePC\source\repos\IAT_Hooking\IAT_Hooking\IAT_Hooking.vcxproj(161,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets (1852,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\IAT_Hooking\x64\Debug\IAT_Hooking\iat_hooking.cat
+  

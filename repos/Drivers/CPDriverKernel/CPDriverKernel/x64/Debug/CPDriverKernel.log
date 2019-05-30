@@ -1,0 +1,18 @@
+﻿C:\Users\WysePC\source\repos\CPDriverKernel\CPDriverKernel\CPDriverKernel.vcxproj(113,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Shared.props (361,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\WysePC\source\repos\CPDriverKernel\CPDriverKernel\CPDriverKernel.vcxproj(163,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets (1852,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Building 'CPDriverKernel' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  Stamping x64\Debug\CPDriverKernel.inf
+  Stamping [Version] section with DriverVer=04/11/2019,15.52.0.770
+  Assembling pe_asm.asm...
+pe_asm.asm(4): error A2070: invalid instruction operands
+pe_asm.asm(5): error A2070: invalid instruction operands
+pe_asm.asm(6): error A2070: invalid instruction operands
+pe_asm.asm(7): error A2070: invalid instruction operands
+pe_asm.asm(12): error A2070: invalid instruction operands
+pe_asm.asm(17): error A2070: invalid instruction operands
+pe_asm.asm(18): error A2070: invalid instruction operands
+pe_asm.asm(19): error A2070: invalid instruction operands
+pe_asm.asm(20): error A2070: invalid instruction operands
+pe_asm.asm(13): error A2006: undefined symbol : Epilog
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets(69,5): error MSB3721: The command "ml64.exe /c /nologo /Zi /Fo"x64\Debug\pe_asm.obj" /W3 /errorReport:prompt  /Tape_asm.asm" exited with code 1.

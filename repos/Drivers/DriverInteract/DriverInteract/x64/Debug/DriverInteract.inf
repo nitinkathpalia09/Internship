@@ -1,0 +1,89 @@
+;
+; DriverInteract.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample ; TODO: edit Class
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=DriverInteract.cat
+DriverVer = 04/12/2019,16.12.9.445
+
+[DestinationDirs]
+DefaultDestDir = 12
+DriverInteract_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+DriverInteract.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%DriverInteract.DeviceDesc%=DriverInteract_Device, Root\DriverInteract ; TODO: edit hw-id
+
+[DriverInteract_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+DriverInteract.sys
+
+;-------------- Service installation
+[DriverInteract_Device.NT.Services]
+AddService = DriverInteract,%SPSVCINST_ASSOCSERVICE%, DriverInteract_Service_Inst
+
+; -------------- DriverInteract driver install sections
+[DriverInteract_Service_Inst]
+DisplayName    = %DriverInteract.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\DriverInteract.sys
+
+;
+;--- DriverInteract_Device Coinstaller installation ------
+;
+
+[DriverInteract_Device.NT.CoInstallers]
+AddReg=DriverInteract_Device_CoInstaller_AddReg
+CopyFiles=DriverInteract_Device_CoInstaller_CopyFiles
+
+[DriverInteract_Device_CoInstaller_AddReg]
+;
+
+
+[DriverInteract_Device_CoInstaller_CopyFiles]
+;
+
+
+[DriverInteract_Device.NT.Wdf]
+KmdfService =  DriverInteract, DriverInteract_wdfsect
+[DriverInteract_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "DriverInteract Installation Disk"
+DriverInteract.DeviceDesc = "DriverInteract Device"
+DriverInteract.SVCDESC = "DriverInteract Service"

@@ -1,0 +1,4 @@
+LIBRARY "ExplicitDLL"
+
+EXPORTS
+	Hello

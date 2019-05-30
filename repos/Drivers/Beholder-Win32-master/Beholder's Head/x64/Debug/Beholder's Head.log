@@ -1,0 +1,22 @@
+﻿  Building 'Beholder's Head' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Debug\Beholder's Head.inf
+  Stamping [Version] section with DriverVer=04/16/2019,14.21.45.897
+  Endpoints.cpp
+  Beholder's Head.vcxproj -> C:\Users\WysePC\source\repos\Drivers\Beholder-Win32-master\x64\Debug\Beholder_Head.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\Drivers\Beholder-Win32-master\x64\Debug\Beholder_Head.sys
+  
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\WysePC\source\repos\Drivers\Beholder-Win32-master\x64\Debug\Beholder's Head\beholderhead.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\WysePC\source\repos\Drivers\Beholder-Win32-master\x64\Debug\Beholder's Head\beholderhead.cat
+  

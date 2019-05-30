@@ -1,0 +1,3 @@
+﻿  Building 'Sirifef Package' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets(1699,5): error MSB3030: Could not copy the file "C:\Users\WysePC\source\repos\Kernel-dll-injector-master\Sirifef\x64\Win8.1Debug\Sirifef.sys" because it was not found.

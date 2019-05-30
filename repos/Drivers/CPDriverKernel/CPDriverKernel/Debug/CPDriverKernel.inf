@@ -1,0 +1,89 @@
+;
+; CPDriverKernel.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample ; TODO: edit Class
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=CPDriverKernel.cat
+DriverVer = 04/11/2019,15.57.34.702
+
+[DestinationDirs]
+DefaultDestDir = 12
+CPDriverKernel_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+CPDriverKernel.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTx86
+
+[Standard.NTx86]
+%CPDriverKernel.DeviceDesc%=CPDriverKernel_Device, Root\CPDriverKernel ; TODO: edit hw-id
+
+[CPDriverKernel_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+CPDriverKernel.sys
+
+;-------------- Service installation
+[CPDriverKernel_Device.NT.Services]
+AddService = CPDriverKernel,%SPSVCINST_ASSOCSERVICE%, CPDriverKernel_Service_Inst
+
+; -------------- CPDriverKernel driver install sections
+[CPDriverKernel_Service_Inst]
+DisplayName    = %CPDriverKernel.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\CPDriverKernel.sys
+
+;
+;--- CPDriverKernel_Device Coinstaller installation ------
+;
+
+[CPDriverKernel_Device.NT.CoInstallers]
+AddReg=CPDriverKernel_Device_CoInstaller_AddReg
+CopyFiles=CPDriverKernel_Device_CoInstaller_CopyFiles
+
+[CPDriverKernel_Device_CoInstaller_AddReg]
+;
+
+
+[CPDriverKernel_Device_CoInstaller_CopyFiles]
+;
+
+
+[CPDriverKernel_Device.NT.Wdf]
+KmdfService =  CPDriverKernel, CPDriverKernel_wdfsect
+[CPDriverKernel_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "CPDriverKernel Installation Disk"
+CPDriverKernel.DeviceDesc = "CPDriverKernel Device"
+CPDriverKernel.SVCDESC = "CPDriverKernel Service"

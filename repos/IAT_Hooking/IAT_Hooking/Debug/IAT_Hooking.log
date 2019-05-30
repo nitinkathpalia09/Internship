@@ -1,0 +1,17 @@
+﻿C:\Users\WysePC\source\repos\IAT_Hooking\IAT_Hooking\IAT_Hooking.vcxproj(114,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.props" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Shared.props (361,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+C:\Users\WysePC\source\repos\IAT_Hooking\IAT_Hooking\IAT_Hooking.vcxproj(161,5): warning MSB4011: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets" cannot be imported again. It was already imported at "C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets (1852,3)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Building 'IAT_Hooking' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  Stamping Debug\IAT_Hooking.inf
+  Stamping [Version] section with DriverVer=04/10/2019,10.37.28.93
+  Assembling hook_asm.asm...
+hook_asm.asm(1): error A2013: .MODEL must precede this directive
+hook_asm.asm(2): error A2034: must be in segment block : hook_asm
+hook_asm.asm(3): error A2034: must be in segment block
+hook_asm.asm(4): error A2034: must be in segment block
+hook_asm.asm(5): error A2034: must be in segment block
+hook_asm.asm(6): error A2034: must be in segment block
+hook_asm.asm(7): error A2034: must be in segment block
+hook_asm.asm(8): error A2034: must be in segment block
+hook_asm.asm(9): fatal error A1010: unmatched block nesting : hook_asm
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets(69,5): error MSB3721: The command "ml.exe /c /nologo /Zi /Fo"Debug\hook_asm.obj" /W3 /errorReport:prompt  /Tahook_asm.asm" exited with code 1.

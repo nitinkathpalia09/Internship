@@ -1,0 +1,32 @@
+;
+; DLLInjector.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class= Sample		
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171}
+Provider=%ManufacturerName%
+DriverVer = 04/16/2019,14.21.45.897
+CatalogFile=BeholderHead.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+
+
+[Strings]
+ManufacturerName="Nitin"
+ClassName="Samples"
+DiskName="DLLInjector Source Disk"

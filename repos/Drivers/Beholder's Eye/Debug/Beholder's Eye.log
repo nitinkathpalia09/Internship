@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  main.c
+C:\Users\WysePC\source\repos\Drivers\Beholder's Eye\Debug\Beholder_Eye32.dll : warning LNK4086: entrypoint '_main' is not __stdcall with 12 bytes of arguments; image may not run
+  Beholder's Eye.vcxproj -> C:\Users\WysePC\source\repos\Drivers\Beholder's Eye\Debug\Beholder_Eye32.dll

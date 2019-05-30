@@ -1,0 +1,6 @@
+﻿  Building 'Finaldriver' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  Stamping Debug\Finaldriver.inf
+  Stamping [Version] section with DriverVer=03/21/2019,20.52.19.644
+  Source.cpp
+c:\users\wysepc\source\repos\finaldriver\finaldriver\source.cpp(141): error C4716: 'DriverEntry': must return a value

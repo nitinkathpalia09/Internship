@@ -1,0 +1,29 @@
+﻿  Building 'Sirifef' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  Stamping x64\Win8.1Debug\Sirifef.inf
+  Stamping [Version] section with DriverVer=04/25/2019,11.54.35.836
+  Sf.c
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(12): error C2220: warning treated as error - no 'object' file generated
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(12): warning C4459: declaration of 'Hash' hides global declaration
+  c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(7): note: see declaration of 'Hash'
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(15): warning C4047: '==': 'UINT32' differs in levels of indirection from 'void *'
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(11): warning C4047: 'initializing': 'INT' differs in levels of indirection from 'void *'
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(54): warning C4459: declaration of 'Hash' hides global declaration
+  c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(7): note: see declaration of 'Hash'
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(59): warning C4100: 'Context': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(59): warning C4100: 'SysArg2': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(59): warning C4100: 'SysArg1': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(59): warning C4100: 'NormalRoutine': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(78): warning C4133: 'function': incompatible types - from 'ULONG *' to 'PSIZE_T'
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(71): warning C4267: 'initializing': conversion from 'size_t' to 'ULONG', possible loss of data
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(65): warning C4100: 'Alert': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(102): warning C4022: 'DllInject': pointer mismatch for actual parameter 1
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(115): warning C4047: '=': 'ULONG' differs in levels of indirection from 'HANDLE'
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(107): warning C4100: 'Context': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(107): warning C4100: 'SystemArgument2': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(107): warning C4100: 'SystemArgument1': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(107): warning C4100: 'NormalRoutine': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(124): warning C4100: 'ProcessId': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(155): warning C4100: 'pDriverobject': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(160): warning C4100: 'pRegister': unreferenced formal parameter
+c:\users\wysepc\source\repos\kernel-dll-injector-master\sirifef\sirifef\sf.c(162): warning C4101: 'st': unreferenced local variable
