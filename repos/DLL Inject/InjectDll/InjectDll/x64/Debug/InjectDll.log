@@ -1,0 +1,18 @@
+﻿  stdafx.cpp
+  dllmain.cpp
+c:\users\wysepc\source\repos\dll inject\injectdll\injectdll\dllmain.cpp(36): warning C4244: 'return': conversion from 'LRESULT' to 'int', possible loss of data
+  InjectDll.cpp
+  Generating Code...
+     Creating library C:\Users\WysePC\source\repos\DLL Inject\InjectDll\x64\Debug\InjectDll.lib and object C:\Users\WysePC\source\repos\DLL Inject\InjectDll\x64\Debug\InjectDll.exp
+dllmain.obj : error LNK2019: unresolved external symbol __imp_fopen_s referenced in function DllMain
+dllmain.obj : error LNK2019: unresolved external symbol __imp_fclose referenced in function DllMain
+dllmain.obj : error LNK2019: unresolved external symbol __imp___stdio_common_vfprintf referenced in function _vfprintf_l
+dllmain.obj : error LNK2019: unresolved external symbol _RTC_CheckStackVars referenced in function DllMain
+dllmain.obj : error LNK2001: unresolved external symbol _RTC_InitBase
+dllmain.obj : error LNK2001: unresolved external symbol _RTC_Shutdown
+dllmain.obj : error LNK2001: unresolved external symbol __GSHandlerCheck
+dllmain.obj : error LNK2019: unresolved external symbol __security_check_cookie referenced in function DllMain
+dllmain.obj : error LNK2019: unresolved external symbol __security_cookie referenced in function DllMain
+LINK : error LNK2001: unresolved external symbol _DllMainCRTStartup
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\MSVCRTD.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\WysePC\source\repos\DLL Inject\InjectDll\x64\Debug\InjectDll.dll : fatal error LNK1120: 10 unresolved externals

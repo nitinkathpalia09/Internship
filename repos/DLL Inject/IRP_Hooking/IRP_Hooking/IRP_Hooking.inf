@@ -1,0 +1,86 @@
+;
+; IRP_Hooking.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample ; TODO: edit Class
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=IRP_Hooking.cat
+DriverVer= ; TODO: set DriverVer in stampinf property pages
+
+[DestinationDirs]
+DefaultDestDir = 12
+IRP_Hooking_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+IRP_Hooking.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%IRP_Hooking.DeviceDesc%=IRP_Hooking_Device, Root\IRP_Hooking ; TODO: edit hw-id
+
+[IRP_Hooking_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+IRP_Hooking.sys
+
+;-------------- Service installation
+[IRP_Hooking_Device.NT.Services]
+AddService = IRP_Hooking,%SPSVCINST_ASSOCSERVICE%, IRP_Hooking_Service_Inst
+
+; -------------- IRP_Hooking driver install sections
+[IRP_Hooking_Service_Inst]
+DisplayName    = %IRP_Hooking.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\IRP_Hooking.sys
+
+;
+;--- IRP_Hooking_Device Coinstaller installation ------
+;
+
+[IRP_Hooking_Device.NT.CoInstallers]
+AddReg=IRP_Hooking_Device_CoInstaller_AddReg
+CopyFiles=IRP_Hooking_Device_CoInstaller_CopyFiles
+
+[IRP_Hooking_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[IRP_Hooking_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[IRP_Hooking_Device.NT.Wdf]
+KmdfService =  IRP_Hooking, IRP_Hooking_wdfsect
+[IRP_Hooking_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "IRP_Hooking Installation Disk"
+IRP_Hooking.DeviceDesc = "IRP_Hooking Device"
+IRP_Hooking.SVCDESC = "IRP_Hooking Service"

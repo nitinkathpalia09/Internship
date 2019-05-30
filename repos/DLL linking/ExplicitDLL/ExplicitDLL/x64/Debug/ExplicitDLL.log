@@ -1,0 +1,3 @@
+﻿dllmain.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+     Creating library C:\Users\WysePC\source\repos\ExplicitDLL\x64\Debug\ExplicitDLL.lib and object C:\Users\WysePC\source\repos\ExplicitDLL\x64\Debug\ExplicitDLL.exp
+  ExplicitDLL.vcxproj -> C:\Users\WysePC\source\repos\ExplicitDLL\x64\Debug\ExplicitDLL.dll

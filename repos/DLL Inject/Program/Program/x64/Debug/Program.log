@@ -1,0 +1,16 @@
+﻿  Source.c
+c:\users\wysepc\source\repos\dll inject\program\program\source.c(87): warning C4047: 'function': 'DWORD' differs in levels of indirection from 'void *'
+c:\users\wysepc\source\repos\dll inject\program\program\source.c(87): warning C4024: 'CreateRemoteThread': different types for formal and actual parameter 6
+Source.obj : error LNK2019: unresolved external symbol strlen referenced in function _tmain
+Source.obj : error LNK2019: unresolved external symbol __imp___acrt_iob_func referenced in function printf
+Source.obj : error LNK2019: unresolved external symbol __imp_getchar referenced in function _tmain
+Source.obj : error LNK2019: unresolved external symbol __imp___stdio_common_vfprintf referenced in function _vfprintf_l
+Source.obj : error LNK2019: unresolved external symbol _RTC_CheckStackVars referenced in function printf
+Source.obj : error LNK2001: unresolved external symbol _RTC_InitBase
+Source.obj : error LNK2001: unresolved external symbol _RTC_Shutdown
+Source.obj : error LNK2001: unresolved external symbol __GSHandlerCheck
+Source.obj : error LNK2019: unresolved external symbol __security_check_cookie referenced in function printf
+Source.obj : error LNK2019: unresolved external symbol __security_cookie referenced in function printf
+LINK : error LNK2001: unresolved external symbol WinMainCRTStartup
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\MSVCRTD.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\WysePC\source\repos\DLL Inject\Program\x64\Debug\Program.exe : fatal error LNK1120: 11 unresolved externals

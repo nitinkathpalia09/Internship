@@ -1,0 +1,7 @@
+﻿  Source.c
+c:\users\wysepc\source\repos\dll inject\patcher\patcher\source.c(28): warning C4312: 'type cast': conversion from 'int' to 'PIMAGE_IMPORT_DESCRIPTOR' of greater size
+Source.obj : error LNK2001: unresolved external symbol _RTC_InitBase
+Source.obj : error LNK2001: unresolved external symbol _RTC_Shutdown
+LINK : error LNK2001: unresolved external symbol _DllMainCRTStartup
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\MSVCRTD.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\WysePC\source\repos\DLL Inject\Patcher\x64\Debug\Patcher.dll : fatal error LNK1120: 3 unresolved externals
